@@ -5,7 +5,7 @@ Install kubectl, ekdctl and aws CLI
 
 Refer EKSmgmtHost.MD from Jenkins Folder
 
-### Step 2 Setup Jenkins Server
+### Step 2 Setup Jenkins CI/CD Pipeline Server
 Install Jenkins Server with Git, Maven. Docker and Jenkins
 
 Refer Jenkinsserver-Installation.MD, Maven-Git-Setup.MD & Docker-Setup.MD from Jenkins Folder
