@@ -39,11 +39,13 @@ OpenJDK 64-Bit Server VM Corretto-11.0.17.8.1 (build 11.0.17+8-LTS, mixed mode)
 
 ## Install Jenkins
 You can install jenkins using the rpm or by setting up the repo. We will setup the repo so that we can update it easily in future.
-Get latest version of jenkins from https://pkg.jenkins.io/redhat-stable/
+Get latest version of jenkins from https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
 ```sh
 yum -y install wget
-wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+wget -O /etc/yum.repos.d/jenkins.repo \
+        https://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+yum upgrade
 yum -y install jenkins
 ```
 
