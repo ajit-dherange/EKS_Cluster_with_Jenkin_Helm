@@ -37,7 +37,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
 
 ### Create EKS cluster and nodes from EC2 Management Host
    4. Create EKS cluster
-   ```sh
+   ```
    eksctl create cluster --name cluster-name  \
    --region region-name \
    --node-type instance-type \
@@ -49,16 +49,16 @@ You can follow same procedure in the official  AWS document [Getting started wit
    eksctl create cluster --name cloudfreak-cluster \
       --region ap-south-1 \
    --node-type t2.medium \
-    ```
+   ```
    
 5. Validate your cluster using by creating by checking nodes and by creating a pod 
-   ```sh 
+   ```
    kubectl get nodes
    kubectl run pod tomcat --image=tomcat 
    ```
    
    
 ### To delete the EKS clsuter 
-   ```sh 
+   ``` 
    eksctl delete cluster cloudfreak-cluster --region ap-south-1
    ```
