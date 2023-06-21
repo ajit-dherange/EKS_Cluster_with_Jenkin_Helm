@@ -114,7 +114,7 @@ Create an IAM Role and attache it to EC2 instance Management Host
    VPC    
    CloudFormation
  
-### Create EKS cluster and nodes from EC2 Management Host
+#### Create EKS cluster and nodes from EC2 Management Host
 4. Create EKS cluster
 ```
 Connect to eks host mgmt instance and run below commands:
