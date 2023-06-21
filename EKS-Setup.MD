@@ -38,7 +38,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
 ## 1) Create EKS cluster using aws console
 
 	**1. Create ekscluster role:**
-   ```
+ 
 	Open the IAM console at https://console.aws.amazon.com/iam/.
 	Choose Roles, then **Create role**.
 	Under Trusted entity type, select AWS service.
@@ -49,10 +49,10 @@ You can follow same procedure in the official  AWS document [Getting started wit
 	For Description, enter descriptive text such as Amazon EKS - Cluster role.
 	Choose Create role.
 	# Use this role while creating cluster on console
-   ```
 	
+
 	**2. Create EKS cluster:**
-   ```
+ 
 	Open the Amazon EKS console at https://console.aws.amazon.com/eks/home#/clusters.
 	Choose **Add cluster** and then choose Create.
 	On the Configure cluster page, enter the following fields:
@@ -67,7 +67,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
 	On the Select add-ons page, Choose Next
 	On the Configure selected add-ons settings page, Choose Next
   On the Review and create page, Choose Next
- ```
+
  
 ### Create EKS cluster and nodes from EC2 Management Host
    4. Create EKS cluster
