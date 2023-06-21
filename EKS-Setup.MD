@@ -22,7 +22,7 @@ For Description, enter descriptive text such as Amazon EKS - Cluster role.
 
 Choose Create role.
 
-# Use this role while creating cluster on console
+Use this role while creating cluster on console
 	
 **2. Create EKS cluster:**
  
