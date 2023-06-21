@@ -1,36 +1,59 @@
-# Setup Kubernetes on Amazon EKS
+# Setup Kubernetes Cluster on Amazon (EKS)
 
 ## 1) Create EKS cluster using aws console
 
 **1. Create ekscluster role:**
  
 Open the IAM console at https://console.aws.amazon.com/iam/.
+
 Choose Roles, then **Create role**.
+
 Under Trusted entity type, select AWS service.
+
 From the Use cases for other AWS services dropdown list, choose EKS
+
 Choose **EKS - Cluster** for your use case, and then choose Next.
+
 On the Add permissions tab, choose Next.
+
 For Role name, enter a unique name for your role, such as **eksClusterRole**.
+
 For Description, enter descriptive text such as Amazon EKS - Cluster role.
+
 Choose Create role.
+
 # Use this role while creating cluster on console
 	
 **2. Create EKS cluster:**
  
 Open the Amazon EKS console at https://console.aws.amazon.com/eks/home#/clusters.
+
 Choose **Add cluster** and then choose Create.
+
 On the Configure cluster page, enter the following fields:
+
 **Name** – A name for your cluster. It must be unique in your AWS account. The name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphabetic character and can't be longer than 100 characters. The name must be unique within the AWS Region and AWS account that you're creating the cluster in.
+
 **Kubernetes version** – The version of Kubernetes to use for your cluster. We recommend selecting the latest version, unless you need an earlier version.
-**Cluster service role **– Choose the Amazon EKS cluster IAM role that you created to allow the Kubernetes control plane to manage AWS resources on your behalf.
+
+**Cluster service role** – Choose the Amazon EKS cluster IAM role that you created to allow the Kubernetes control plane to manage AWS resources on your behalf.
+
 **Secrets encryption** – (Optional) Choose to enable secrets encryption of Kubernetes secrets using a KMS key. You can also enable this after you create your cluster. Before you enable this capability, make sure that you're familiar with the information in Enabling secret encryption on an existing cluster.
+
 **Tags** – (Optional) Add any tags to your cluster. For more information, see Tagging your Amazon EKS resources.
+
 Choose Next.
+
 On the Specify networking page, Choose Next 
+
 On the Configure logging page, Choose Next
+
 On the Select add-ons page, Choose Next
+
 On the Configure selected add-ons settings page, Choose Next
+
 On the Review and create page, Choose Next
+
 ```
 export AWS_ACCESS_KEY_ID=xxxxx
 export AWS_SECRET_ACCESS_KEY=xxxx
